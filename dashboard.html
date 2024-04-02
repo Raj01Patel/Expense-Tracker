@@ -29,6 +29,10 @@
                 </a>
             </span>
 
+            <span>
+                <button id="logout" class="allBtns">Log Out</button>
+            </span>
+
         </div>
     </nav>
 
@@ -118,9 +122,33 @@
         </div>
 
         <div class="budget-container1">
-            <canvas id="chart"></canvas>
+            <h1>Chart Analysis <i class="fa-solid fa-chart-column" style="color: #000000;"></i>
+            </h1>
+            <canvas id="barChart"></canvas>
         </div>
     </main>
+
+    <script>
+        document.getElementById("logout").addEventListener('click', () => {
+            localStorage.removeItem('currUser');
+            check();
+        })
+
+        const check = () => {
+            let curr = localStorage.getItem('currUser');
+            curr = JSON.parse(curr);
+            console.log(curr);
+            if (!curr) {
+                window.location.href = 'Validation Form/login.html';
+                return;
+            } else {
+                document.getElementById("userName").innerHTML = `${curr.fName} ${curr.lName}`;
+            }
+        }
+
+
+        window.onload = check;
+    </script>
 
     <script src="dashboard.js"></script>
     <script src="chart.js"></script>

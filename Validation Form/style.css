@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    overflow: hidden;
+    background-color : #e7f0fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form{
+    background-color : #e7f0fe;
+    height: 100vh;
+    width: 35%;
+    margin-left: 3%;
+    font-size: large;
+    padding-top: 2%;
+}
+
+input{
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+h1{
+    color: #6287ff;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+label{
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.inputElements{
+    width: 75%;
+    height: 13px;
+    border-radius: 5px;
+    border: 1px solid #6287ff;
+}
+
+.allBtnsDiv{
+    margin-top: 25px;
+    display: flex;
+    margin-right: 140px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.allBtns{
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    width: 130px;
+    border-radius: 6px;
+    background-color: #6287ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-right: 20px;
+}
+
+.allBtns:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #000000;
+}

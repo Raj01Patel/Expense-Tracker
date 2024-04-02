@@ -23,6 +23,8 @@ const addIncome = document.querySelector(".add-income");
 const incomeTitle = document.getElementById("income-title-input");
 const incomeAmount = document.getElementById("income-amount-input");
 
+
+
 // VARIABLES
 let ENTRY_LIST = [];
 let balance = 0, income = 0, outcome = 0;
@@ -157,7 +159,7 @@ function updateUI() {
         showEntry(allList, entry.type, entry.title, entry.amount, index)
     });
 
-    updateChart(income, outcome);
+    updateChart(income, outcome, balance);
 
     localStorage.setItem("entry_list", JSON.stringify(ENTRY_LIST));
 }
@@ -246,5 +248,4 @@ function inactive(elements) {
 // LOOK IF THERE IS SAVED DATA IN LOCALSTORAGE
 ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
 updateUI();
-
 

@@ -1,36 +1,34 @@
+var ctx = document.getElementById('barChart').getContext("2d");
+var myChart = null; // Initialize myChart variable to store the chart instance
 
+function updateChart(income, outcome, balance) {
+  // Check if a chart instance exists
+  if (myChart !== null) {
+    // Destroy the existing chart instance
+    myChart.destroy();
+  }
 
-const ctx = document.getElementById('chart').getContext("2d");
-
-function updateChart(income, outcome) {
-  var chart = new Chart(ctx, {
-    type: 'bar',
+  // Create a new chart instance
+  myChart = new Chart(ctx, {
+    type: 'doughnut',
     data: {
       labels: ["income", "expense", "balance"],
       datasets: [{
-        label: '# of Votes',
+        label: '',
         data: [income, outcome, balance],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(255, 205, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(201, 203, 207, 0.2)'
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
         ],
         borderColor: [
           'rgb(255, 99, 132)',
           'rgb(255, 159, 64)',
           'rgb(255, 205, 86)',
-          'rgb(75, 192, 192)',
-          'rgb(54, 162, 235)',
-          'rgb(153, 102, 255)',
-          'rgb(201, 203, 207)'
         ],
         borderWidth: 1
+
       }]
     },
   });
-
 }
