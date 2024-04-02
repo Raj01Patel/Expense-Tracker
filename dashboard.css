@@ -40,12 +40,37 @@ nav {
 .nav-right {
     display: flex;
     /* border: 2px solid black; */
-    border: 2px solid #686c69;
-    width: 25%;
+    /* border: 2px solid #686c69; */
+    width: 30%;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(234, 231, 231);
+    /* background-color: rgb(234, 231, 231); */
     border-radius: 10px;
+}
+
+.nav-right span a .r1 {
+    background-color: white;
+    /* border: 2px solid black; */
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.nav-right span a .r2 {
+    background-color: white;
+    /* border: 2px solid black; */
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.nav-right span a h2:hover {
+    background-color: #84a6f5;
+}
+
+.nav-right span a h2:active {
+    transform: scale(.98) translateY(5px);
+    filter: brightness(.9);
 }
 
 .nav-right span a img {
@@ -128,7 +153,8 @@ main {
     display: inline-block;
     border: 2px solid black;
     text-align: center;
-    width: 14%;
+    align-items: center;
+    width: 18%;
     height: 30px;
     /* background-color: #fe8c8c; */
     border-radius: 5px;
@@ -285,6 +311,11 @@ main {
     cursor: pointer;
 }
 
+.budget-dashboard #expense .input .add-expense img:active {
+    transform: scale(.98) translateY(5px);
+    filter: brightness(.9);
+}
+
 .budget-dashboard #expense ul {
     width: 100%;
     height: 320px;
@@ -392,6 +423,11 @@ main {
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+
+.budget-dashboard #income .input .add-income img:active {
+    transform: scale(.98) translateY(5px);
+    filter: brightness(.9);
 }
 
 .budget-dashboard #income ul {
