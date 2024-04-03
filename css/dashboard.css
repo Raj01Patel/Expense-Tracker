@@ -514,6 +514,9 @@ main {
 
 .budget-container1 h1{
     margin: 10px 0px 40px 0px;
+    border-bottom: 3px solid black;
+    width: 40%;
+    margin: auto;
 }
 
 .budget-container1 #barChart {
