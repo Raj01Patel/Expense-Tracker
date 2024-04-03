@@ -91,10 +91,10 @@ Throughout the development of our Expense Tracker
 **1. Home Page UI**
 ![e1](https://github.com/Raj01Patel/Expense-Tracker/assets/151771972/1abcb251-419d-4b19-8baa-5100e74a1c6c)
 
-**1. AI Bot UI**
+**2. AI Bot UI**
 ![e2](https://github.com/Raj01Patel/Expense-Tracker/assets/151771972/fc45fa30-637e-4eff-bfdb-233ab379131a)
 
-**1. Tax Calculator UI**
+**3. Tax Calculator UI**
 ![e3](https://github.com/Raj01Patel/Expense-Tracker/assets/151771972/6c7f5ac4-4fa6-47e4-bfe5-d92b1256b6ff)
 
 
