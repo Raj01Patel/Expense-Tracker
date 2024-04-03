@@ -39,7 +39,8 @@ Expense tracking is important in creating a budget for your small business. Keep
 ---
 
 ## Technologies Used:  
-<img src="https://img.icons8.com/color/48/000000/html-5.png"/>          <img src="https://img.icons8.com/color/48/000000/css3.png"/>         
+<img src="https://img.icons8.com/color/48/000000/html-5.png"/>          <img src="https://img.icons8.com/color/48/000000/css3.png"/>       ![icons8-javascript-48 (1)](https://github.com/Raj01Patel/Expense-Tracker/assets/151771972/c710dcc1-43b0-4c0f-9173-e2e0c9d8d28d)
+
 1.  **HTML:**  
 Used for structuring the web pagesincluding headers, navigation bars, content sections, and footers.
 2.  **CSS:** 
@@ -82,10 +83,7 @@ Throughout the development of our Expense Tracker
 ## License:
 - This project is licensed under the [Geekster](LICENSE).
 - You are free to use and modify this code for your own purposes.
-  ![salary](https://github.com/Raj01Patel/Expense-Tracker/assets/151771972/b5452b6d-d5a1-434b-976f-21129fc37936)
 
-
-)
 ---
 
 ## Website UI Explanation
