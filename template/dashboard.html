@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="dashboard.css" />
-    <link rel="shortcut icon" href="./image/salary.png" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="shortcut icon" href="../image/salary.png" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="nav-left">
-            <img src="./image/salary.png" alt="Logo" />
+            <img src="../image/salary.png" alt="Logo" />
             <span>
                 <h2>Expense Tracker</h2>
             </span>
@@ -25,7 +25,7 @@
                 </a></span>
             <span>
                 <a href="./taxcalculator.html">
-                    <h2 class="r2"><img src="./image/calculator.png"> Tax calculator</h2>
+                    <h2 class="r2"><img src="../image/calculator.png"> Tax calculator</h2>
                 </a>
             </span>
 
@@ -92,7 +92,7 @@
                     <div class="input">
                         <input type="text" id="income-title-input" name="title" placeholder="Title">
                         <input type="number" id="income-amount-input" name="amount" placeholder="₹0">
-                        <div class="add-income"><img src="./image/plus.svg"></div>
+                        <div class="add-income"><img src="../image/plus.svg"></div>
                     </div>
                 </div>
                 <div class="hide" id="expense">
@@ -109,7 +109,7 @@
                     <div class="input">
                         <input type="text" id="expense-title-input" name="title" placeholder="Title">
                         <input type="number" id="expense-amount-input" name="amount" placeholder="₹0">
-                        <div class="add-expense"><img src="./image/plus.svg"></div>
+                        <div class="add-expense"><img src="../image/plus.svg"></div>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
             curr = JSON.parse(curr);
             console.log(curr);
             if (!curr) {
-                window.location.href = '../login.html';
+                window.location.href = 'login.html';
                 return;
             } else {
                 document.getElementById("userName").innerHTML = `${curr.fName} ${curr.lName}`;
@@ -150,8 +150,8 @@
         window.onload = check;
     </script>
 
-    <script src="dashboard.js"></script>
-    <script src="chart.js"></script>
+    <script src="../script/dashboard.js"></script>
+    <script src="../script/chart.js"></script>
     <script src="https://kit.fontawesome.com/9c96e71cba.js" crossorigin="anonymous"></script>
 </body>
 
