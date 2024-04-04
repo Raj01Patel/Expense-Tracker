@@ -28,16 +28,16 @@ function calculateTax() {
 
   var options = {
     "key": "rzp_test_zK4jEMrLRD2PnQ",
-    "amount": 100,
+    "amount": `${totalTax}`,
     "currency": "INR",
     "name": "Acme Corp",
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",
-    "order_id": "order_NtlvQ9tLme8D4n",
+    "order_id": totalTax.order_id,
     "handler": function (response) {
-      alert(response.razorpay_payment_id);
+      // alert(response.razorpay_payment_id);
       alert(response.razorpay_order_id);
-      alert(response.razorpay_signature)
+      // alert(response.razorpay_signature)
     },
     "prefill": {
       "name": "Raj Patel",
