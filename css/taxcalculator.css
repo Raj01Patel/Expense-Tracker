@@ -91,7 +91,6 @@ section:not(:first-child) {
 }
 
 section:last-child {
-  background-color: #cdccfd;
   padding: 10px;
   border-radius: 5px;
 }
